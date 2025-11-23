@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Contact Us | Mary Adesokan Foundation – Get in Touch</title>
+    <meta name="description" 
+          content="Get in touch with Mary Adesokan Foundation for inquiries, volunteer opportunities, donations, partnerships, or program information. We’re here to help.">
+    <meta name="keywords" 
+          content="Contact Mary Adesokan Foundation, NGO Nigeria contact, charity inquiries, volunteer opportunities, nonprofit support, donation questions, community programs contact, foundation assistance">
+    <link rel="canonical" href="https://maryadesokanfoundation.netlify.app/contact.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Social Media Open Graph -->
+    <meta property="og:title" content="Contact Mary Adesokan Foundation – Reach Out to Us">
+    <meta property="og:description" 
+          content="Connect with Mary Adesokan Foundation for questions, donations, volunteer programs, or partnerships. We’re ready to support you and our communities.">
+    <meta property="og:image" content="https://maryadesokanfoundation.netlify.app/images/full-logo.webp">
+    <meta property="og:url" content="https://maryadesokanfoundation.netlify.app/contact.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Mary Adesokan Foundation – Get in Touch">
+    <meta name="twitter:description" 
+          content="Reach out to Mary Adesokan Foundation for inquiries, donations, volunteer opportunities, or partnerships.">
+    <meta name="twitter:image" content="https://maryadesokanfoundation.netlify.app/images/full-logo.webp">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("292AtbBnh-OlC68Gw"); // your EmailJS public key
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <img src="images/logo.png" alt="Mary Adesokan Foundation logo" height="40">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="btn btn-danger ms-2" href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="about-hero py-5 text-center" style="margin-top: 72px;">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p class="lead">We would love to hear from you. Reach out for support, partnerships, or inquiries.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Contact Info -->
+                <div class="col-md-5">
+                    <h4>Get in Touch</h4>
+                    <p><strong>Email:</strong> adesokanmary29@gmail.com</p>
+                    <p><strong>Phone:</strong> <a href="tel:+2349074248887" class="text-decoration-none">+234 907 424 8887</a></p>
+                    <p><strong>Address:</strong> Lagos, Nigeria</p>
+                    <p><strong>Follow Us:</strong></p>
+                    <ul class="list-unstyled">
+                        <li><a href="https://wa.me/2348114807743" target="_blank" rel="noopener">Whatsapp</a></li>
+                        <li><a href="https://www.facebook.com/share/1MRy6r7LxV/" target="_blank" rel="noopener">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/mary.adesokanfoundation/" target="_blank" rel="noopener">Instagram</a></li>
+                        <li>X (Twitter)</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-md-7">
+                    <form id="contact-form" name="contact" method="POST" data-netlify="true"
+                        class="p-4 p-md-5 shadow rounded">
+                        <input type="hidden" name="form-name" value="contact">
+
+                        <div class="mb-3">
+                            <label for="from_name" class="form-label">Name</label>
+                            <input id="from_name" name="from_name" type="text" class="form-control"
+                                placeholder="Your Name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="from_email" class="form-label">Email</label>
+                            <input id="from_email" name="from_email" type="email" class="form-control"
+                                placeholder="Your Email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="6"
+                                placeholder="Your Message" required></textarea>
+                        </div>
+
+                        <div id="form-alert" class="mb-3" role="status" aria-live="polite" style="display:none;"></div>
+
+                        <button id="send-btn" type="submit" class="btn btn-danger w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 text-center">
+        <p>&copy; 2025 Mary Adesokan Foundation | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- EmailJS form handling -->
+    <script>
+        const form = document.getElementById('contact-form');
+        const sendBtn = document.getElementById('send-btn');
+        const alertBox = document.getElementById('form-alert');
+
+        const EMAILJS_SERVICE_ID = 'service_003hd1o';
+        const EMAILJS_TEMPLATE_ID = 'template_17b642l';
+
+        function showAlert(message, type = 'success') {
+            alertBox.style.display = 'block';
+            alertBox.className = '';
+            alertBox.classList.add('alert');
+            alertBox.classList.add(type === 'success' ? 'alert-success' : 'alert-danger');
+            alertBox.innerText = message;
+            setTimeout(() => { alertBox.style.display = 'none'; }, 6000);
+        }
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            sendBtn.disabled = true;
+            sendBtn.innerText = 'Sending...';
+
+            emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
+                .then(response => {
+                    showAlert('Message sent successfully. Thank you!', 'success');
+                    form.reset();
+                }, error => {
+                    showAlert('Failed to send message. Please try again later.', 'error');
+                })
+                .finally(() => {
+                    sendBtn.disabled = false;
+                    sendBtn.innerText = 'Send Message';
+                });
+        });
+    </script>
+</body>
+
+</html>
