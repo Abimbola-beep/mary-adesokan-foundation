@@ -7,21 +7,21 @@
 
     <!-- Primary SEO Meta Tags -->
     <title>Programs & Initiatives | Mary Adesokan Foundation – Empowering Communities</title>
-    <meta name="description" 
-          content="Explore the programs and initiatives of Mary Adesokan Foundation, including education support, healthcare outreach, women & youth empowerment, scholarship programs, and community development projects.">
-    
-    <meta name="keywords" 
-          content="Mary Adesokan Foundation programs, NGO initiatives Nigeria, charity projects, education support programs, healthcare outreach, women empowerment initiatives, youth development programs, community service projects, nonprofit activities, humanitarian initiatives">
+    <meta name="description"
+        content="Explore the programs and initiatives of Mary Adesokan Foundation, including education support, healthcare outreach, women & youth empowerment, scholarship programs, and community development projects.">
+
+    <meta name="keywords"
+        content="Mary Adesokan Foundation programs, NGO initiatives Nigeria, charity projects, education support programs, healthcare outreach, women empowerment initiatives, youth development programs, community service projects, nonprofit activities, humanitarian initiatives">
 
     <link rel="canonical" href="https://maryadesokanfoundation.netlify.app/programs.html">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/logo.png" alt="Mary Adesokan Foundation logo">
 
     <!-- Social Media Open Graph -->
     <meta property="og:title" content="Programs & Initiatives – Mary Adesokan Foundation">
-    <meta property="og:description" 
-          content="Discover the impactful programs and initiatives of Mary Adesokan Foundation empowering communities through education, health, and social support.">
+    <meta property="og:description"
+        content="Discover the impactful programs and initiatives of Mary Adesokan Foundation empowering communities through education, health, and social support.">
     <meta property="og:image" content="https://maryadesokanfoundation.netlify.app/images/full-logo.webp">
     <meta property="og:url" content="https://maryadesokanfoundation.netlify.app/programs.html">
     <meta property="og:type" content="website">
@@ -29,8 +29,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mary Adesokan Foundation Programs – Making a Difference">
-    <meta name="twitter:description" 
-          content="Learn about Mary Adesokan Foundation’s programs in education, healthcare, empowerment, and community development.">
+    <meta name="twitter:description"
+        content="Learn about Mary Adesokan Foundation’s programs in education, healthcare, empowerment, and community development.">
     <meta name="twitter:image" content="https://maryadesokanfoundation.netlify.app/images/full-logo.webp">
 
     <!-- CSS -->
@@ -154,8 +154,22 @@
 
     <!-- Footer -->
     <footer class="py-3 text-center">
-        <p>&copy; 2025 Mary Adesokan Foundation | All Rights Reserved</p>
+        <p>&copy; <span id="year"></span> Mary Adesokan Foundation | All Rights Reserved</p>
+        <p>
+            Website built by
+            <a href="https://ikoodigital.netlify.app" target="_blank"
+                class="text-decoration-none fw-semibold d-inline-flex align-items-center" style="color: teal;">
+                <img src="images/ikoodigital-logo.jpeg" alt="IKOO Digital Logo"
+                    style="height:24px; width:auto; margin-right:6px;">
+                IKOO Digital
+            </a>
+        </p>
     </footer>
+
+    <script>
+        // Auto-update year
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
